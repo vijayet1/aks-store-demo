@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main     # or your default branch
+    paths:
+      - charts/**/*
+      - .github/workflows/chart-release.yaml
 
 jobs:
   release:
